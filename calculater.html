@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function result(obj){
+            let num1=parseInt(document.getElementById("num1").value);
+            let num2=parseInt(document.getElementById("num2").value);
+            if(obj.innerHTML=="ADDITION")
+                var add=num1+num2;
+            else if(obj.innerHTML=="SUBTRACTION")
+                var add=num1-num2;
+            else if(obj.innerHTML=="MULTIPLY")
+                var add=num1*num2;
+            else 
+                var add=num1/num2;
+            document.getElementById("res").value=add;
+             
+        }
+       
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label>Enter Number 1</label></td>
+            <td> <input type="number" placeholder="Number " id="num1"></td>
+            <td></td>
+            <td></td>
+      
+        </tr>
+        
+        <tr>
+            <td><label>Enter Number 2</label></td>
+            <td> <input type="number" placeholder="Number " id="num2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label>RESULT</label></td>
+            <td> <input id="res" type="text" placeholder="Chosse Operation For Result "></td>
+            <td></td>
+            <td></td>
+        </tr>
+       
+        <tr>
+            <td colspan="4">
+            <button type="button" onclick="result(this)" id="add" >ADDITION</button>
+            <button type="button" onclick="result(this)" id="sub" >SUBTRACTION</button>
+            <button type="button" onclick="result(this)" id="product" >MULTIPLY</button>
+            <button type="button" onclick="result(this)" id="divide" >DIVISION</button></td>
+        </tr>
+    </table>
+</body>
+</html>
