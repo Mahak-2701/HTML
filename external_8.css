@@ -1,0 +1,23 @@
+body{
+    margin: 40px;
+    padding: 20px;
+}
+.box{
+    background-color: aquamarine;
+    height: 250px;
+    width: 300px;
+    margin:0 auto;
+   
+}
+h1{
+    margin: 20px;
+    padding: 20px;
+    text-align :center;
+}
+p{
+    color: rgb(253, 146, 6);
+    text-align: center;
+}
+h6{
+    text-align: center;
+}
